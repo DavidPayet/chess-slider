@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "LE PION",
+    "bgUrl": "assets/pawn.png",
+    "description": "Avance d'une case vers l'avant (ou deux au premier coup) et capture en diagonale. Malgré sa faible valeur d'un point, il joue un rôle crucial dans la formation de la structure de pions et le contrôle de l'espace. Sa particularité de pouvoir être promu en atteignant la dernière rangée en fait une pièce stratégiquement importante pour le contrôle du centre et la création de faiblesses dans le camp adverse."
+  },
+  {
+    "id": 2,
+    "name": "LE ROI",
+    "bgUrl": "assets/king.png",
+    "description": "Se déplace d'une seule case dans toute direction (horizontale, verticale, diagonale) et est la pièce maîtresse dont la capture met fin à la partie. Il possède la particularité unique de pouvoir effectuer le roque avec une tour. Bien que sa valeur soit inestimable, sa stratégie d'utilisation évolue au cours de la partie : il doit être protégé en début et milieu de jeu, mais devient une pièce active en fin de partie."
+  },
+  {
+    "id": 3,
+    "name": "LA DAME",
+    "bgUrl": "assets/queen.png",
+    "description": "Pièce la plus puissante de l'échiquier, peut se déplacer d'un nombre illimité de cases dans toute direction. Avec une valeur de 9 points, elle joue un rôle crucial tant en attaque qu'en défense. La stratégie pour son utilisation requiert de la judiciosité afin de maximiser son impact sur le jeu sans la mettre inutilement en danger."
+  },
+  {
+    "id": 4,
+    "name": "LA TOUR",
+    "bgUrl": "assets/rook.png",
+    "description": "Se déplace d'un nombre illimité de cases horizontalement et verticalement, ce qui lui permet de contrôler efficacement les colonnes et les rangées. Valorisée à 5 points, elle participe au mouvement spécial du roque avec le roi. Stratégiquement, la tour gagne en efficacité sur les colonnes ouvertes et devient particulièrement puissante en fin de partie."
+  },
+  {
+    "id": 5,
+    "name": "LE FOU",
+    "bgUrl": "assets/bishop.png",
+    "description": "Se déplace en diagonale sur un nombre illimité de cases, restant toujours sur des cases de la même couleur. Avec une valeur de 3 points, il excelle dans le contrôle des longues diagonales. Sa stratégie d'utilisation le rend particulièrement utile pour les attaques à distance et le contrôle du centre étendu de l'échiquier."
+  },
+  {
+    "id": 6,
+    "name": "LE CAVALIER",
+    "bgUrl": "assets/knight.png",
+    "description": "Unique dans son mouvement en \"L\" (deux cases puis une perpendiculairement), est la seule pièce capable de sauter par-dessus les autres. Valorisé à 3 points, il est stratégiquement excellent pour les attaques surprises et les fourchettes, ce qui en fait une pièce redoutable dans les mains d'un joueur habile."
+  }
+]

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Slider</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#home">Accueil</a>
+      <a href="#about">Histoire</a>
+      <a href="#useful-link">Liens utils</a>
+    </nav>
+
+    <button type="button" aria-label="Ouvir le menu" class="navToggler">
+      <span class="line l1"></span>
+      <span class="line l2"></span>
+      <span class="line l3"></span>
+    </button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="chessPiecesContainer"></div>
+
+    <div class="arrows">
+      <button class="prev">＜</button>
+      <button class="next">＞</button>
+    </div>
+  </section>
+
+  <section id="about" class="aboutContainer">
+    <h2>Histoire des échecs</h2>
+    <p>
+      L'histoire du jeu d'échecs s'étend sur plus de 1500 ans, avec des origines qui remontent à l'Asie entre le IIIe et
+      le VIe siècle de notre ère. Bien que le lieu exact de son invention soit toujours débattu entre l'Inde, la Chine
+      et l'Asie centrale, la plupart des historiens s'accordent sur une origine indienne vers l'an 600.
+    </p>
+    <br>
+    <p>
+      Le jeu primitif, appelé chaturanga, se jouait à quatre joueurs avec des dés et huit pièces chacun : quatre pions,
+      un bateau (ou char), un cheval, un éléphant et un roi. Il évolua rapidement vers une version à deux joueurs sans
+      dés, nommée chatrang en Perse.
+    </p>
+    <br>
+    <p>
+      Les Arabes adoptèrent le jeu sous le nom de shatranj et le diffusèrent lors de leur expansion, notamment en
+      Espagne et en Sicile au Xe siècle. De là, il se répandit dans toute l'Europe, où il connut une grande popularité
+      du XIIe au XVe siècle, malgré des tentatives d'interdiction par l'Église.
+    </p>
+    <br>
+    <p>
+      Entre 1400 et 1600, les Européens modifièrent significativement les règles, introduisant notamment la dame
+      (absente jusque-là), modifiant le déplacement du fou et accordant plus de mobilité aux pions. Ces changements
+      aboutirent à la version moderne du jeu que nous connaissons aujourd'hui.
+    </p>
+    <br>
+    <p>
+      Parallèlement, en Extrême-Orient, le jeu évolua différemment, donnant naissance à des variantes comme le xiangqi
+      en Chine et le shogi au Japon.
+    </p>
+    <br>
+    <p>
+      Au fil des siècles, le jeu d'échecs est devenu un élément important de la culture occidentale, utilisé comme
+      métaphore de la stratégie militaire et de la vie en société. Il a connu une évolution constante, passant d'un jeu
+      de l'élite à un passe-temps populaire, puis à un sport compétitif de renommée mondiale.
+    </p>
+    <br>
+    <img src="/assets/pawn-to-queen.jpg" alt="vision d'un pion">
+  </section>
+
+  <footer id="useful-link">
+    <a href="" target="_blank" rel="noopener">
+      <img src="/assets/github-logo.svg" alt="code source" class="githubLogo">
+    </a>
+    <br>
+    <p>Réalisé par davi
+      <a href="https://davidpayet.netlify.app/" target="_blank" rel="noopener">
+        <img src="/assets/logo_gold1.svg" alt="portfolio" class="dpLogo">
+      </a> ayet.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
