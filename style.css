@@ -309,10 +309,6 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
-    padding-left: 50px;
-  }
-
   .content {
     left: 50px;
   }
@@ -331,9 +327,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header nav a {
-    font-size: 14px;
-    margin-right: 0;
+  nav {
+    min-height: 40vh;
+  }
+
+  nav a {
+    font-size: 25px;
   }
 
   .content {
@@ -349,7 +348,7 @@ footer {
   }
 
   .aboutContainer p {
-    width: 350px;
+    width: 450px;
   }
 
   .aboutContainer img {
@@ -358,6 +357,14 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .navToggler {
+    width: 30px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
   .description {
     display: none;
   }
@@ -365,5 +372,15 @@ footer {
   .arrows {
     top: 90%;
     right: 32%;
+  }
+
+  h2 {
+    font-size: 23px;
+  }
+
+  .aboutContainer p {
+    width: 250px;
+    font-size: 16px;
+    text-align: justify;
   }
 }
