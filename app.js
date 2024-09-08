@@ -7,10 +7,31 @@ const navigation = document.querySelector('nav')
 
 navToggler.addEventListener('click', toggleNav)
 
-function toggleNav() {
+function toggleNav(e) {
+  e.stopPropagation()
   navToggler.classList.toggle('active')
   navigation.classList.toggle('active')
 }
+
+let isMouseDown = false
+
+document.addEventListener('mousedown', () => {
+  isMouseDown = true
+})
+
+document.addEventListener('mouseup', (e) => {
+  if (
+    isMouseDown &&
+    navigation.classList.contains('active') &&
+    !navigation.contains(e.target) &&
+    e.target !== navToggler
+  ) {
+    navToggler.classList.remove('active')
+    navigation.classList.remove('active')
+  }
+
+  isMouseDown = false
+})
 
 const getPieces = () => {
   fetch('/data/pieces.json')
