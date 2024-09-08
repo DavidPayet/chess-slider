@@ -1,5 +1,6 @@
 const hero = document.querySelector('.hero')
 const chessPiecesContainer = document.querySelector('.chessPiecesContainer')
+const movementsContainer = document.querySelector('.movementsContainer')
 const nextBtn = document.querySelector('.next')
 const prevBtn = document.querySelector('.prev')
 const navToggler = document.querySelector('.navToggler')
@@ -39,6 +40,7 @@ const getPieces = () => {
     .then((pieces) => {
       pieces.forEach((piece) => {
         let onePiece = document.createElement('div')
+        let pieceMovements = document.createElement('div')
 
         onePiece.className = 'piece'
         onePiece.style.backgroundImage = `url(${piece.bgUrl})`
@@ -49,9 +51,16 @@ const getPieces = () => {
           </div>
         `
 
+        pieceMovements.className = 'movements'
+        pieceMovements.innerHTML = `
+          <p>${piece.name}</p>
+          <p>${piece.description}</p>
+        `
+
         chessPiecesContainer.appendChild(onePiece)
+        movementsContainer.appendChild(pieceMovements)
       })
-      document.body.appendChild(chessPiecesContainer)
+      document.body.appendChild(chessPiecesContainer, movementsContainer)
     })
     .catch((error) =>
       console.error('Erreur lors du chargement des pièces: ', error)

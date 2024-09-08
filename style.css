@@ -92,6 +92,10 @@ nav.active {
   transform: translate(0);
 }
 
+nav a:nth-child(3) {
+  display: none;
+}
+
 nav a {
   color: #fff;
   display: block;
@@ -270,7 +274,8 @@ h2 {
   margin: 40px 0 120px;
 }
 
-.aboutContainer p {
+.aboutContainer p,
+.movementsContainer {
   font-size: 20px;
   font-weight: lighter;
   text-align: center;
@@ -281,7 +286,8 @@ h2 {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.aboutContainer p.visible {
+.aboutContainer p.visible,
+.movementsContainer {
   opacity: 1;
   transform: translateY(0);
 }
@@ -289,6 +295,10 @@ h2 {
 .aboutContainer img {
   display: block;
   margin: 100px auto 0;
+}
+
+.movementsContainer {
+  display: none;
 }
 
 footer {
@@ -365,6 +375,10 @@ footer {
     font-size: 18px;
   }
 
+  nav a:nth-child(3) {
+    display: block;
+  }
+
   .description {
     display: none;
   }
@@ -375,11 +389,31 @@ footer {
 
   h2 {
     font-size: 23px;
+    margin: 0 0 100px;
   }
 
   .aboutContainer p {
     width: 250px;
     font-size: 16px;
     text-align: justify;
+  }
+
+  .movementsContainer {
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(178deg, #1d5882 0%, #1d1e1d 150%);
+    padding-bottom: 100px;
+  }
+
+  .movements {
+    width: 250px;
+    font-size: 16px;
+    text-align: justify;
+    margin: 30px auto 0;
+  }
+
+  .movements p:nth-child(1) {
+    font-weight: 300;
   }
 }
